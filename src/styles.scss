@@ -1,0 +1,24 @@
+$input-border-color: red;
+$input-focus-border-color: red;
+$input-btn-focus-color: red;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+.transparency-50 {
+  --bs-bg-opacity: .5;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-72 {
+  height: 18rem;
+}

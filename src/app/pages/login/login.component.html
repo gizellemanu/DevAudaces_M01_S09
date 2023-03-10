@@ -1,0 +1,26 @@
+<div class="body container-fluid d-flex flex-column align-content-center p-0 gap-5">
+  <nav class="min-vw-100 d-flex justify-content-center bg-black transparency-50 h-20">
+    <img src="assets/netflix.svg" alt="netflix-logo">
+  </nav>
+  <section class="d-flex justify-content-center">
+    <form class="d-flex flex-column gap-2 transparency-50 bg-black p-5 rounded-1"
+          [formGroup]="userForm">
+      <label for="email">
+        Nome de Usuário
+      </label>
+      <input class="form-control"
+             type="email" id="email" formControlName="email">
+      <label for="password">
+        Senha
+      </label>
+      <input class="form-control"
+             type="password" id="password" formControlName="password">
+      <button class="btn btn-danger"
+              type="submit"
+              (click)="authenticateUser()"
+              [disabled]="!userForm.valid">
+        Enviar
+      </button>
+    </form>
+  </section>
+</div>

@@ -1,0 +1,10 @@
+<main class="home" style="margin-top: 0">
+  <div>h</div>
+  <ng-container *ngIf="moviesList">
+    <ul class="d-flex flex-wrap justify-content-around" style="margin-top: 5rem">
+      <li *ngFor="let movie of moviesList.slice(5)">
+        <app-card [movie]="movie"></app-card>
+      </li>
+    </ul>
+  </ng-container>
+</main>

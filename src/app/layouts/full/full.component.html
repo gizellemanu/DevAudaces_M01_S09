@@ -1,0 +1,18 @@
+<div class="body">
+  <nav class="container-fluid fixed-top bg-black transparency-50">
+    <ul class="row list-unstyled">
+      <li class="col-sm-2 d-flex align-items-end">
+        <a [routerLink]="'/home'">
+          <img src="assets/netflix.svg" alt="netflix-logo">
+        </a>
+      </li>
+      <li class="col-sm-10 d-flex justify-content-end align-items-end mt-3">
+        <a class="btn btn-danger"
+           [routerLink]="'/home'">
+          Movies
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

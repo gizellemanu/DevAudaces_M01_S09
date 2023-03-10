@@ -1,0 +1,7 @@
+<div class="netflix-card"
+     *ngIf="movie">
+  <img (click)="redirectToMovie()"
+       class="netflix-image"
+       [src]="movie.image" [alt]="movie.title">
+  <p>{{movie.title}}</p>
+</div>
