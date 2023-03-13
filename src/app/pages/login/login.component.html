@@ -6,12 +6,12 @@
     <form class="d-flex flex-column gap-2 transparency-50 bg-black p-5 rounded-1"
           [formGroup]="userForm">
       <label for="email">
-        Nome de Usuário
+        User Name
       </label>
       <input class="form-control"
              type="email" id="email" formControlName="email">
       <label for="password">
-        Senha
+        password
       </label>
       <input class="form-control"
              type="password" id="password" formControlName="password">
@@ -19,7 +19,7 @@
               type="submit"
               (click)="authenticateUser()"
               [disabled]="!userForm.valid">
-        Enviar
+        send
       </button>
     </form>
   </section>

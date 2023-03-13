@@ -18,7 +18,6 @@ export class AuthGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot,
   ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    // eslint-disable-next-line no-underscore-dangle
     return this._authService.getUserStatus()
       ? true : this.router.navigate(['/login']);
   }
