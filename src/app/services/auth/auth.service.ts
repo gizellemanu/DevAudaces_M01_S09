@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   private email:string = 'gizellemanu@hotmail.com';
-
   private password:string = '951623784';
 
   private getCredentialsValidity(
